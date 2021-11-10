@@ -1,0 +1,30 @@
+.rettangolo-card{
+    border: 2px solid black;
+    width: 100px;
+    height: 250px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   
+}
+
+#card-image{
+    width: 150px;
+    display: flex;
+   
+}
+
+#div-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(255, 183, 0);
+    border-radius: 30px;
+    
+}
