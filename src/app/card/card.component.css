@@ -1,8 +1,8 @@
 .rettangolo-card{
     border: 2px solid black;
-    width: 100px;
-    height: 250px;
-    padding-right: 100px;
+    width: 10vw;
+    height: 35vh;
+    
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -10,7 +10,8 @@
 }
 
 #card-image{
-    width: 150px;
+    width: 8vw;
+    height: 18vh;
     display: flex;
    
 }
@@ -23,8 +24,33 @@
     font-weight: bold;
 }
 
-button {
+
+
+p{
+    text-align: center;
+    position: relative;
+    font-size:1rem;
+    
+}
+
+
+.container-show-detail-button{
+    display: flex;
+    justify-content: right;
+    
+}
+
+.show-detail-button {
     background-color: rgb(255, 183, 0);
     border-radius: 30px;
+    border-style: none;
+    height: 3vh;
+    width: 5vw;
+    position: relative;
+    margin: auto;
+
+    
+    
+        
     
 }

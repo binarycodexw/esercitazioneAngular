@@ -1,1 +1,54 @@
-<p>dettagliprodotto works!</p>
+<!--<app-card *ngFor="let card of items; " [card]="card"></app-card> --> 
+
+<div *ngIf="cardFigure; else benvenuti">
+   
+    <div class="card-information">
+       <div class="flex">
+           <div>
+               <img src="{{ cardFigure.img }}"/>
+           </div>
+           <div class="flex-card">
+               <div class="flex-card"><h1> {{cardFigure.title}}</h1></div>
+               <p>Anno di uscita: {{cardFigure.exitYear}}</p>
+               <p>Altezza: {{cardFigure.productHeight}}cm</p>
+               <p>Peso: {{cardFigure.productWeight}}g</p>
+               <p>Pezi prodotti: {{cardFigure.itemsProduced}}</p>
+           </div>
+       </div>
+
+
+        <div class="flex-card">
+          <p class="flex-card">{{ cardFigure.description }}</p>
+          <p class="flex-card" id="prezzo">Prezzo:{{ cardFigure.price }} €</p>
+        </div>
+
+
+        <div class="flex-button">
+            <button type="button" class="details-card-button" (click)="add.emit(cardFigure)" ><p>Acquista</p></button>
+            <button type="button" style="background-color: red;" class="details-card-button" (click)="close.emit(cardFigure)" ><p>chiudi</p></button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<ng-template #benvenuti>
+<div>
+    
+<div id="container">
+    <h1 id="h1-container">Benvenuti nello shop di</h1>
+    <img id="logo-develhope" src="https://www.develhope.co/_nuxt/img/cav_black.9dc2b13.svg">
+    
+    <p id="p-container">Clicca sui dettagli del prodotto per visualizzare tutte le informazioni</p>
+    
+    
+    </div>
+    
+</div>
+</ng-template>

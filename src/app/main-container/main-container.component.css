@@ -4,13 +4,23 @@
     flex-direction: column;
 }
 
-h1 {
-    text-align: center;
+
+
+
+#card-and-dettagliprodotto-main-container{
+    display: flex;
+    
+
 }
 
-img{
-    margin: auto;
-    width: 30%;
+.carrello-button{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(59, 63, 168);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 17px;
+    
 }
-
 

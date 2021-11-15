@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-//import { EventEmitter } from 'stream';
 import { oggettoCard } from '../interface';
 
 @Component({
@@ -12,7 +11,7 @@ export class CardComponent implements OnInit {
 
   @Input() card!:oggettoCard;
 
-  @Output() seeCard = new EventEmitter<oggettoCard>();
+  @Output() showDetails = new EventEmitter<oggettoCard>();
 
   constructor() { }
 

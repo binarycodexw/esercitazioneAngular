@@ -2,9 +2,11 @@
 <div class="rettangolo-card">
 
 <img id="card-image" [src]="card.img">
-<p id="div-card">{{card.title}}</p>
-{{card.price}}€
 
-<button (click)="seeCard.emit">Show Detail</button>
+<p id="div-card">{{card.title}}</p>
+<p style="text-align: left; margin-left: 20px;">{{card.price}}€</p>
+
+
+<button type="button" class="show-detail-button" (click)="showDetails.emit(card)">Show Detail</button>
 
 </div>

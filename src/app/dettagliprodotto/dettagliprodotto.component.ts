@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { oggettoCard } from '../interface';
+
 
 @Component({
   selector: 'app-dettagliprodotto',
@@ -6,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dettagliprodotto.component.css']
 })
 export class DettagliprodottoComponent implements OnInit {
+
+
+  
+  @Input() cardFigure?:oggettoCard;
+  @Output() close = new EventEmitter<oggettoCard>();
+  @Output() add = new EventEmitter<oggettoCard>();
 
   constructor() { }
 
